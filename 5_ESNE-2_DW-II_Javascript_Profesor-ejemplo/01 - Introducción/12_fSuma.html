@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+
+    <!-- Añadimos JavaScript -->
+    <script type="text/javascript">
+
+        function sumar(n1, n2){
+            let resul = Number(n1)  + Number(n2);
+            return resul;
+        }
+
+
+        var num1 = prompt("Introduzca el primer número");
+        var num2 = prompt("Introduzca el segundo número");
+
+        var resultado = sumar(num1, num2);
+        alert('El resultado de la suma es: ' + resultado);
+    </script>
+
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Primeros pasos con JavaScript</h2>
+    <p>Cremos una función que recibe como parámetros dos valores y nos devuelve la suma</p>
+
+    <script type="text/javascript">
+
+        var num3 = prompt("Introduzca el tercer número");
+        var num4 = prompt("Introduzca el cuarto número");
+
+        //var resultado = sumar(num1, num2);
+        document.write('El resultado de la suma es: ' + sumar(num3, num4));
+    </script>
+
+</body>
+</html>

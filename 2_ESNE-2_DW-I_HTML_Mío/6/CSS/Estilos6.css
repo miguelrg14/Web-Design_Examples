@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+    background-color: rgb(194, 194, 194);
+  }
+.container{
+    background-color: green;
+    width: 80%;
+    height: 600px;
+    margin: 100px;
+}
+.nav{
+    background-color: rgb(75, 75, 75);
+    top: 0px;
+}
+.nav div{
+    display: inline-block;
+    padding: 20px;
+}
+.menuLateral{
+    border: 2px solid black;
+    position: fixed;
+    width: 90px;
+    top: 30%;
+    text-align: center;
+}
+.menuLateral ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.Tarjeta
+{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    margin: 8% auto;
+    position: relative;
+}
+
+.Tarjeta img{
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+    /*
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10%;
+    z-index: 0;
+    */
+}
+
+#maldivas1{
+    position: absolute;
+    transform: rotate(45deg);
+    margin-left: 150px;
+}
+
+#maldivas2{
+    position: absolute;
+    transform: rotate(80deg);
+    margin-left: 200px;
+}
+  
+#maldivas3{
+    position: absolute;
+    transform: rotate(30deg);
+    margin-left: 250px;
+}

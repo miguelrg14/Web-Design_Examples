@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+
+    <!-- Añadimos JavaScript -->
+    <script type="text/javascript">
+        // Ejemplo: if..then..else
+        var edad = 20;
+
+        if (edad >= 18) {
+            alert("Eres mayor de edad. Puedes continuar...");            
+        } else {
+            alert("NO eres mayor de edad. Lasciate ogni speranza, voi ch'entrate");
+        }
+
+        // Ejemplo: for
+        for (let cont = 0; cont <= 5 ; cont++){
+            alert("for -> Valor de cont: " + cont);
+        }
+
+        // Ejemplo: while
+        let cont2 = 0;
+        while (cont2 <= 5){
+            alert("while -> Valor de cont2: " + cont2);
+            cont2++;
+        }
+
+        // Ejemplo: do..while
+        let cont3 = 0;
+        do {
+            alert("do while -> Valor de cont3: " + cont3);
+            cont3++;
+        } while (cont3 <= 5);
+
+        //Ejemplo switch
+        var valor = 8;
+
+        switch (valor) {
+            case 0:
+                alert("Esta es la opción 0");
+                break;
+            case 1:
+                alert("Esta es la opción 1");
+                break;
+            case 2:
+                alert("Esta es la opción 2");
+                break;
+            case 3:
+                alert("Esta es la opción 3");
+                break;
+            case 4:
+                alert("Esta es la opción 4");
+                break;
+            case 5:
+                alert("Esta es la opción 5");
+                break;
+        
+            default:
+                alert("Opción desconocida, no se encuentra entre 0 y 5");
+                break;
+        }
+        
+    </script>
+
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Primeros pasos con JavaScript</h2>
+    <p>Ejemplos básicos de las principales estructuras de control en JavaScript</p>
+</body>
+</html>

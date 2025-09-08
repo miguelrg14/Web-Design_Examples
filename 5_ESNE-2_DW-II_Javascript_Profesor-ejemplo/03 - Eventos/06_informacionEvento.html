@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    
+    function resalta(elEvento) {
+        var evento = elEvento || window.event;
+        switch(evento.type) {
+            case 'mouseover':
+                this.style.borderColor = 'black';
+                break;
+            case 'mouseout':
+                this.style.borderColor = 'silver';
+                break;
+        }
+    }
+
+    window.onload = function() {
+        document.getElementById("seccion").onmouseover = resalta;
+        document.getElementById("seccion").onmouseout = resalta;
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Eventos en JavaScript</h1>
+    <h2>Información del evento</h2>
+
+    <div id="seccion" style="width:300px; border:thick solid silver">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede.
+    </div>
+
+</body>
+</html>

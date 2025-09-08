@@ -1,0 +1,64 @@
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+tbody tr td:first-child{
+    background-color:green;
+}
+/* Esto es un comentario 
+o no        :/
+bueno si    :D
+*/
+/* "nth...()" => campo de algo */
+tbody tr:nth-child(3) th:nth-child(2)
+{
+    background-color: yellow;
+}
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color:green;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:turquoise;
+}
+
+tr th:last-child:hover, 
+td:last-child:hover{
+    font-size: 2em;
+    color:green;
+}
+/*  th == cabecero
+    td == columnas
+    tr == filas
+*/
+/* Ultima palabra de la última columna en rojo*/
+td:last-child{
+    color:rgb(255, 0, 0);
+}
+/* Primera letra d la palabra => más grande*/
+thead tr th::first-letter{
+    font-size: 2em;
+}
+/* el "*" de despues d email */
+label:after
+{
+    color: red;
+    content: "*";
+}
+input:required
+{
+    padding: 19px;
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+}

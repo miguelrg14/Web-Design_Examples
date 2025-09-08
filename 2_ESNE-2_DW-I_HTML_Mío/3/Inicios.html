@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <!--Título de la página-->
+        <title>Ejercicio HTML</title>
+    </head>
+    <!--Bgcolor = BackGround Color ==> Color del fondo de la página-->
+    <body bgcolor="#00BFFF">  
+
+        <form action="">
+            <p>
+                Nombre:
+                <input type="text" name="nombre" size="45" maxlength="40"/>
+                </p><p>
+                    Año de nacimiento:
+                    <input type="password" name="clave" size=45 maxlength="15"/>
+                </p>
+            </p>
+            <br>
+            Sexo: 
+            <input type="radio" name="opcion" checked value="H">Hombre
+            <input type="radio" name="opcion" checked value="M">Mujer
+            <input type="radio" name="opcion" checked value="O">Vladimir
+            <br>
+            <br>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <!--Tutorial Formulario-->
+        <form action="">
+            <p>
+                Introduce tu nombre de usuario:
+                <input type="text" name="nombre" size="45" maxlength="40"/>
+                </p><br><p>
+                    Introduce la contraseña:
+                    <input type="password" name="clave" size=45 maxlength="15"/>
+                </p><br><p>
+                    Introduce un comentario:
+                    <textarea name="mensaje" rows="5" cols="50"></textarea>
+                </p>
+                </p><br><p>
+                    Subir clave
+                    <input type="file" name="fichero" size="60"/>
+            </p>
+            <br>
+            Elecciones
+            <input type="radio" name="opcion" checked value="H">Hombre<br>
+            <input type="radio" name="opcion" checked value="M">Mujer<br>
+            <input type="radio" name="opcion" checked value="O">Otro<br>
+            <select name="transporte">
+                <option>Hombre</option>
+                <option>Mujer</option>
+                <option>Otro</option>
+            </select>
+            <input type="submit" value="Enviar este formulario" />
+            <input type="reset" value="Reestablecer todos los campos a su valor predeterminado" />
+
+        </form>
+
+    </body>
+</html>

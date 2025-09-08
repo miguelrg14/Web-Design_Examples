@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('La página se ha cargado completamente');">
+    <h1>Eventos en JavaScript</h1>
+    <h2>Manejadores de eventos como atributos XHTML</h2>
+
+    <input type="button" value="Pinchame y verás" onclick="alert('Acabas de hacer click en el botón');" />
+
+    <div style="background-color:cadetblue;" onclick="alert('Has pinchado con el ratón');" onmouseover="alert('Acabas de pasar el ratón por encima');">
+        Puedes pinchar sobre este elemento o simplemente pasar el ratón por encima
+    </div>
+
+    <div id="contenidos" style="margin: 1.5em 0.5em; width:150px; border:thin solid silver" 
+        onmouseover="document.getElementById ('contenidos').style.borderColor='black';" 
+        onmouseout="document.getElementById('contenidos').style.borderColor='silver';">
+        Esta es una forma incorrecta de usar los eventos sin usar la variabe this
+    </div>
+
+    <div id="contenidos" style="margin: 1.5em 0.5em; width:150px; border:thin solid silver" 
+        onmouseover="this.style.borderColor='black';" 
+        onmouseout="this.style.borderColor='silver';">
+        Esta es la forma correcta de usar los eventos con la variable this
+    </div>
+
+</body>
+</html>

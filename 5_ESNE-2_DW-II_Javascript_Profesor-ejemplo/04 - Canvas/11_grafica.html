@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function draw() {
+            var ctx = document.getElementById('miCanvas').getContext('2d');
+            var img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 20, 20);
+                ctx.beginPath();
+                ctx.moveTo(50, 96);
+                ctx.lineTo(70, 66);
+                ctx.lineTo(103, 76);
+                ctx.lineTo(185, 30);
+                ctx.stroke();
+            };
+            img.src = 'https://mdn.mozillademos.org/files/5395/backdrop.png';
+            }
+
+    </script>
+
+    <style type="text/css">
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body onload="draw();">
+    <h1>Uso de Canvas</h1>
+    <h2>Ejercicios con el elemento Canvas</h2>
+
+    <canvas id="miCanvas" width="220" height="170"></canvas>
+    
+</body>
+</html> 

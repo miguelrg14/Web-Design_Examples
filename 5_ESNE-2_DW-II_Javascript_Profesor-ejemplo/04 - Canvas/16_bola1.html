@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        function draw(){
+            var canvas = document.getElementById('miCanvas');
+            if (canvas.getContext){
+                var ctx = canvas.getContext('2d');
+
+                var ball = {
+                    x: 100,
+                    y: 100,
+                    radius: 25,
+                    color: 'blue',
+                    draw: function() {
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+                        ctx.closePath();
+                        ctx.fillStyle = this.color;
+                        ctx.fill();
+                    }
+                };
+                ball.draw();
+            }
+         }
+    </script>
+
+    <style type="text/css">
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body onload="draw();">
+    <h1>Uso de Canvas</h1>
+    <h2>Ejercicios con el elemento Canvas</h2>
+
+    <canvas id="miCanvas" width="600" height="300"></canvas>
+    
+</body>
+</html>

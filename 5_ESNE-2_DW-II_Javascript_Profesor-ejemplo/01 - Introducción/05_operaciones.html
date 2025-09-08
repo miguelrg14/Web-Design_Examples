@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+
+    <!-- Añadimos JavaScript -->
+    <script type="text/javascript">
+        // Declaramos e inicializamos variables
+        var num1 = 100;
+        var num2 = 30;
+        
+        suma = num1 + num2;
+        resta = num1 - num2;
+        multi = num1 * num2;
+        divi = num1 / num2;
+        resto = num1 % num2;
+
+        // Muestro resultados de operaciones básicas
+        alert(
+            "La suma de " + num1 + " + " + num2 + " = " + suma + 
+            "\nLa resta de " + num1 + " - " + num2 + " = " + resta + 
+            "\nLa multiplicación de " + num1 + " * " + num2 + " = " + multi +
+            "\nLa división de " + num1 + " / " + num2 + " = " + divi +
+            "\nLa resto de la división de " + num1 + " entre " + num2 + " = " + resto
+        );
+
+        //Declaro un array y lo inicializo con los días de la semana
+        var semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+        var dia = 3;
+
+        //Muestro el día correspondiente
+        alert(semana[dia]);
+
+        //Modifico el valor del array en la posición dia y lo muestro de nuevo
+        semana[dia] = 1000;
+        alert (semana[dia]);
+        
+    </script>
+
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Primeros pasos con JavaScript</h2>
+    <p>He mostrado los resultados de unas operaciones básicas</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h2>Acceder atributos</h2>
+
+    <a id="enlace" href="http://www.esne.es">Enlace</a>
+    <br>
+    
+    <div id="cuadrado" style="width: 100px; height: 100px; background-color: red;"></div>
+    <br>
+
+    <p id="parrafo" class="normal" style="font-weight: bold;">Este párrafo está en negrita</p>
+
+
+    <script type="text/javascript">
+        //Acceder a atributos de un nodo
+        var enlace = document.getElementById("enlace");
+        alert(enlace.href);
+
+        var cuadrado = document.getElementById("cuadrado");
+        alert(cuadrado.style.backgroundColor);
+
+        var parrafo = document.getElementById("parrafo");
+        alert(parrafo.style.fontWeight);
+
+        alert(parrafo.class); // muestra "undefined"
+        alert(parrafo.className);
+    </script>
+</body>
+</html>

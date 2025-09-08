@@ -1,0 +1,65 @@
+h2{
+    margin-left: 25px;
+}
+body{
+    margin: 0px;
+}
+/* Cuadro gris menú de selección */
+.menuSUP{
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    z-index: 10;
+}
+/* Cuadro azul con adaptable a la pantalla y con margenes */
+.padre1{
+    background-color: cornflowerblue;
+    /* Con el porcentaje se adapta a la pantalla conforme la aumentas o reduces de tamaño*/
+    width: 60%;
+    height: 250px;
+    /* Márgenes */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* Estos 2 son los hijos/cuadrados más pequeños que estan dentro del anterior creado*/
+    .hijo1{
+        background-color: green;
+        width: 50px;
+        height: 50px;
+        margin-left: 80px;
+        margin-top:30px;
+        position: absolute;
+    }
+    .hijo2{
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        margin-left: 60px;
+        margin-top:50px;
+        position: absolute;
+    }
+.padre2{
+    background-color: beige;
+    width: 60%;
+    height: 500px;
+    margin-top: 20px;;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuINF{
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}
+th{
+    text-align: center;
+}

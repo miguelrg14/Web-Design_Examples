@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+
+    <!-- Añadimos JavaScript -->
+
+
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Sucesión de Fibonacci</h2>
+
+    <script type="text/javascript">
+        let n1 = 1;
+        let n2 = 1;
+        let resul = n1 + ', ' + n2;
+        let num = prompt("¿Cuántos elementos de la sucesión quieres calcular?");
+
+        for (let index = 1; index < num - 1; index++) {
+            aux = n1 + n2;
+            n1 = n2;
+            n2 = aux;
+            resul += ', ' + n2;
+        }
+        document.writeln("<p>Los primeros " + num + " términos de la sucesión son:</p><br/>");
+
+        document.write(resul);
+    </script>
+
+
+</body>
+</html>

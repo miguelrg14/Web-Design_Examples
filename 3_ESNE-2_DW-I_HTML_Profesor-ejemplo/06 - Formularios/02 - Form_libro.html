@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario libro</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="" method="POST">
+	
+	<p>	Id: <input type="number" name="iden" min="1"></p>
+
+	<p>	Título: <input type="text" name="titulo" required=""></p>
+
+	<p>	ISBN: <input type="text" name="isbn"></p>
+
+	<p>	Nº páginas: <input type="number" name="npag"></p>
+
+	<p>Resumen:<br>
+		<textarea rows="10" name="resumen"></textarea>
+	</p>
+
+	<p>Palabras clave:<br>
+		<textarea rows="5" name="pclave"></textarea>
+	</p>
+
+	<p>Palabras clave: <br>
+		<input type="checkbox" name="pclave2" > BestSeller
+		<input type="checkbox" name="pclave2" > Tapa Dura
+		<input type="checkbox" name="pclave2" > Precio reducido
+		<input type="checkbox" name="pclave2" > Edición limitada
+	</p>
+
+	<p>Género: <br>
+		<input type="radio" name="genero" value="0" checked> Sin definir
+		<input type="radio" name="genero" value="1"> Romántico
+		<input type="radio" name="genero" value="2"> Acción
+		<input type="radio" name="genero" value="3"> Misterio
+		<input type="radio" name="genero" value="4"> Terror
+		<input type="radio" name="genero" value="5"> Comedia
+	</p>
+
+	<p>Año publicación: <input type="number" name="anop" min="2000"></p>
+
+	<input type="submit" value="Enviar libro">
+	<input type="reset" value="Limpiar">
+	</form>
+</body>
+</html>

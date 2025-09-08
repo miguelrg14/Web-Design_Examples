@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function draw(){
+            var canvas = document.getElementById('miCanvas');
+            if (canvas.getContext){
+                var ctx = canvas.getContext('2d');
+
+                ctx.fillRect(0, 0, 150, 150);   // Pintamos rectangulo
+                ctx.save();                  // Guardamos estado por defecto
+
+                ctx.fillStyle = '#09F';      // Cambiamos configuracion
+                ctx.fillRect(15, 15, 120, 120); // Pintamos rectangulo con nueva configuración
+
+                ctx.save();                  // Guardamos estado actual
+                ctx.fillStyle = '#FFF';      // Cambiamos configuracion
+                ctx.globalAlpha = 0.5;
+                ctx.fillRect(30, 30, 90, 90);   // Pintamos rectangulo con nueva configuración
+
+                ctx.restore();               // Restauramos estado previo
+                ctx.fillRect(45, 45, 60, 60);   // Pintamos rectangulo con configuración restaurada
+
+                ctx.restore();               // Restauramos estado original
+                ctx.fillRect(60, 60, 30, 30);   // Pintamos rectangulo con configuración restaurada
+            }
+         }
+    </script>
+
+    <style type="text/css">
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body onload="draw();">
+    <h1>Uso de Canvas</h1>
+    <h2>Ejercicios con el elemento Canvas</h2>
+
+    <canvas id="miCanvas" width="150" height="150"></canvas>
+    
+</body>
+</html>

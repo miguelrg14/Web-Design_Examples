@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+
+    <!-- Añadimos JavaScript -->
+    <script type="text/javascript">
+        let dni = prompt("Introduzca el número del DNI: ");
+        let letra = prompt("Introduzca la letra del DNI: ");
+        letra = letra.toUpperCase(letra);
+
+        let letras = "TRWAGMYFPDXBNJZSQVHLCKET";
+
+        if(dni < 0 || dni > 99999999) {
+            alert("El número proporcionado no es válido");
+        }
+        else {
+            let letraCalculada = letras[dni % 23];
+            if(letraCalculada != letra) {
+                alert("La letra o el número proporcionados no son correctos");
+            } else {
+                alert("El número de DNI y su letra son correctos");
+            }
+        }        
+    </script>
+
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Primeros pasos con JavaScript</h2>
+    <p>Script que calcula le letra de un DNI determinado</p>
+</body>
+</html>

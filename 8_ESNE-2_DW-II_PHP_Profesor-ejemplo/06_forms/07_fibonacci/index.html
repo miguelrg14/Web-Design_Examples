@@ -1,0 +1,43 @@
+<!-- Cálculo de serie de Fibonacci-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serie de Fibonacci</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Cálculo de Serie de Fibonacci</h1>
+	<hr>
+	<br><br>
+
+
+	<div style="width: 50%; float: left;">
+		<form action="procesarFibo.php" method="POST">
+
+			<fieldset>
+				<legend><strong>Fibonacci</strong></legend>
+				Nº elementos: <input name='numero' type='number' min="1">
+			</fieldset>
+
+			<br><br>
+			<input type="submit" name="enviar" value="Calcular Serie Fibonacci">
+		</form>
+	</div>
+	
+
+<div style="width: 50%; float: right;" >
+	<form action="procesarFibo.php" method="POST">
+
+		<fieldset>
+			<legend><strong>Fibonacci</strong></legend>
+			Nº elementos: <input name='tope' type='number' min="1">
+		</fieldset>
+
+		<br><br>
+		<input type="submit" name="enviar" value="Calcular Serie Fibonacci">
+	</form>
+</div>
+
+</body>
+</html>

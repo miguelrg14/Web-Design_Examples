@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("pinchable").onclick = muestraMensaje; //OJO!!!!!! Sin paréntesis
+            document.getElementById("texto").onmouseover = muestraMensaje;
+            // document.getElementById("texto").onmouseout = cambiaTexto(this);
+        } 
+    
+    function muestraMensaje() {
+        alert("Esto es un mensaje");
+    }
+
+    function cambiaTexto(elemento) {
+        //elemento = getElementById("texto");
+        //elemento.innerHTML("Estás encima del botón");
+        alert(elemento);
+    }
+        
+    </script>
+</head>
+<body>
+    <h1>Eventos en JavaScript</h1>
+    <h2>Manejadores de eventos semánticos</h2>
+
+    <input id="pinchable" type="button" value="Haz click y verás" />
+    <br><br>
+    <div id="texto"></div>
+</body>
+</html>

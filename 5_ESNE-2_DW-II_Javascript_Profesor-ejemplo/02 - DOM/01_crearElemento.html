@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h2>Añadir elemento</h2>
+
+    <script type="text/javascript">
+        //AÑADIR ELEMENTO
+            //Creamos nodo de tipo Element
+            var parrafo = document.createElement("p");
+    
+            //Creamos nodo de tipo Text
+            var contenido = document.createTextNode("Hola Mundo...");
+    
+            //Añadimos el nodo Text como hijo del nodo Element
+            parrafo.appendChild(contenido);
+    
+            //Añadimos el nodo Element como hijo de la página
+            document.body.appendChild(parrafo);
+
+            //Añadimos texto a la página
+            document.write("<h3>Texto añadido al fin de la página</h3>");
+        </script>
+</body>
+</html>

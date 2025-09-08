@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function muestraMensaje() {
+            alert('Gracias por pinchar');
+        }
+        
+        function resalta(elemento) {
+            switch(elemento.style.borderColor) {
+                case 'silver': //Firefox
+                case 'silver silver silver silver': //Explorer
+                case '#c0c0c0': //Opera
+                elemento.style.borderColor = 'black';
+                break;
+                case 'black':
+                case 'black black black black':
+                case '#000000':
+                elemento.style.borderColor = 'silver';
+                break;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Eventos en JavaScript</h1>
+    <h2>Manejadores de eventos como funciones externas</h2>
+
+    <input type="button" value="Haz click y verás" onclick="muestraMensaje()" />
+
+
+    <div style="margin: 1.5em 0.5em; width:400px; border:thin solid silver" onmouseover="resalta(this)" onmouseout="resalta(this)">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi.
+    </div>
+
+</body>
+</html>
